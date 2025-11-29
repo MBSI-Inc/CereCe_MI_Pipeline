@@ -1,0 +1,28 @@
+include README.md
+include LICENSE
+include pyproject.toml
+include MANIFEST.in
+
+# Include all Python files in src
+recursive-include src *.py
+
+# Include configuration files
+include *.yml
+include *.yaml
+include *.json
+include *.toml
+
+# Include documentation
+recursive-include docs *.md
+recursive-include docs *.rst
+recursive-include docs *.txt
+
+# Exclude unnecessary files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *~
+global-exclude .DS_Store
+global-exclude .git*
+global-exclude __pycache__
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

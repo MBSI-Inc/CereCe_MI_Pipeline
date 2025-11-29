@@ -1,0 +1,26 @@
+# Core scientific computing packages
+numpy==1.26.4
+scipy>=1.14.0
+matplotlib>=3.9.1
+pandas>=2.2.3
+
+# Machine learning - use stable versions
+scikit-learn>=1.5.1
+
+# GUI and experiment control
+pygame>=2.6.0
+# psychopy>=2022.1.0
+
+# EEG device communication
+explorepy==1.8.0
+
+# Optional: Pre-compiled wheels for Windows
+# Uncomment if you have issues with compilation
+# --find-links https://download.pytorch.org/whl/torch_stable.html
+# --prefer-binary
+
+# Development dependencies (optional)
+# pytest>=7.0.0
+# pytest-cov>=3.0.0
+# black>=22.0.0
+# flake8>=4.0.0
