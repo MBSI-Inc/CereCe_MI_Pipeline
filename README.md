@@ -1,19 +1,17 @@
 # MI: Motor Imagery Brain–Computer Interface
 
-This repository reorganizes the original MI project, providing a cleaner code structure and a README that links all key resources, making it a good starting point for understanding the Cerebruh_BCI project.  
+This repository reorganizes the original MI project, providing a cleaner code structure and a README that links all key resource. This repo is a good starting point for understanding the Cerebruh_BCI project.  
 
-The original project repo:   
-[https://github.com/MBSI-Inc/Cerebruh_BCI/tree/main/Experiments/MI_2](https://github.com/MBSI-Inc/Cerebruh_BCI/tree/main/Experiments/MI_2)   
+you can click [**repo**](https://github.com/MBSI-Inc/Cerebruh_BCI/tree/main/Experiments/MI_2) to access the original project 
 
 ## Quick links
-- **Onboarding Doc (Include workshop 1-3 for newbees)**:   
-https://mbsi-org-au.atlassian.net/wiki/spaces/BCI/pages/174948360/Onboarding+Brain+Brain
+- [**Onboarding Doc**](https://mbsi-org-au.atlassian.net/wiki/spaces/BCI/pages/174948360/Onboarding+Brain+Brain) - Include workshop 1-3 for newbees:   
 
-- **Code for integration (Connect MI outputs to the wheelchair controller)**:   
-https://github.com/MBSI-Inc/CereCe_Integration/blob/NewGaze/a.py
 
-- **3D unity simulator(Gaze Based)**:   
-https://github.com/MBSI-Inc/Gazebaes_Wheelchair_Simulator
+- [**Code for integration**](https://github.com/MBSI-Inc/CereCe_Integration/blob/NewGaze/a.py) - Connect MI outputs to the wheelchair controller 
+
+
+- [**3D unity simulator(Gaze Based)**](https://github.com/MBSI-Inc/Gazebaes_Wheelchair_Simulator) - A wheelchair simulator based on Unity
 
 
 
@@ -93,3 +91,38 @@ python launch_async_mi_diagnostic.py -n "Explore_Device_Name" -m "model_filename
 
 Usage summary
 - Record with `launch_record_experiment.py` → Train with `launch_train_and_save_model.py` → Run with `launch_async_mi_core.py` or `launch_async_mi_diagnostic.py`.
+
+## Future Plan
+### 1) Pipeline integration
+Integrate the full pipeline from real-time MI classification to wheelchair control.
+
+**Deliverables:**
+- Wheelchair control via Real-time MI classification.
+
+### 2) BCI-based 3D simulator
+Extend the existing gaze-based 3D simulator to accept BCI outputs as control signals.
+
+**Deliverables:**
+- A Github repo for BCI-based 3D simulator
+
+### 3) MI Data Standard
+Define a unified recorded-data specification (file format, labels, trial structure, and naming conventions).
+
+
+
+**Deliverables:**
+- Data Specification Document
+
+### 4) Unified, deployment-friendly, and visualised platform
+Build a unified platform that makes the Cerebruh_BCI workflow easier to run, demo, and extend, especially for newbees and non-technical users.
+
+**Planned features**
+- [High priority] In-platform data recording and real-time MI classification
+- Plug-in model support: add new models with minimal backend changes
+- [High priority] Unity-based wheelchair control simulation (link to Unity repo)
+- [High priority] Real wheelchair control integration via BCI output to a wired motor interface
+- Related code path: CereCe_Integration/a.py → jrk2cmd
+
+**Deliverables**
+- A Lo-Fi prototype: Create a quick UI/flow prototype first (e.g., Figma) to align the user needs before implementation.
+- A Github repo for the platform
