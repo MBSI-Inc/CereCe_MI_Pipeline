@@ -54,6 +54,8 @@ python launch_record_experiment.py -n "Explore_Device_Name" -f "output_filename"
 ### 2) Train the Classifier
 Trains an LDA classifier on recorded EEG data and saves the model. Expects the same file name as provided in the recording step. Will save the trained model using the same name.  
 
+*Details*: We first segmented the EEG into time windows, computed the power spectral density (PSD) for each segment, extracted band-power features from relevant frequency ranges (e.g., μ and β), and then used an LDA classifier to predict a binary label (left or right).
+
 **Usage**  
 
 ```bash
