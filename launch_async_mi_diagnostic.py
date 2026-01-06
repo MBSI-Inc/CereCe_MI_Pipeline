@@ -1,7 +1,7 @@
 ## script to launch online motor imagery experiment
 
 import argparse
-from mi_bci import AsyncMIDiagnostic
+from src.async_mi_diagnostic_class import AsyncMIDiagnostic
 import constants
 
 

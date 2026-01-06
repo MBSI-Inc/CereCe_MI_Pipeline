@@ -1,5 +1,5 @@
 from explorepy import Explore
-from mi_bci import Record
+from src.record_MI_class import Record
 from constants import DEFAULT_FILENAME, DEFAULT_EEG_NAME
 import argparse
 

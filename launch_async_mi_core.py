@@ -2,7 +2,7 @@
 import argparse
 import time
 import constants
-from mi_bci import AsyncMICore
+from src.async_mi_core import AsyncMICore
 import keyboard
 
 

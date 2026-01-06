@@ -1,5 +1,5 @@
 from constants import DEFAULT_FILENAME
-from mi_bci import MI_analyse, MI_classifier
+from src.analysisMI_classes import MI_analyse, MI_classifier
 import argparse
 
 
